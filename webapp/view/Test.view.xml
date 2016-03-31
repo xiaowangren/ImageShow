@@ -1,0 +1,11 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.ui.image.webapp.view.Test">
+	<App>
+		<pages>
+			<Page title="Title">
+				<content>
+				    <Image width="50%" height="" id="__image0" backgroundRepeat=""/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

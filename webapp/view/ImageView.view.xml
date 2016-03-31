@@ -1,0 +1,125 @@
+<mvc:View controllerName="com.ui.image.controller.ImageView" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:m="sap.m"
+	xmlns="sap.uxap"
+	xmlns:layout="sap.ui.layout"
+	xmlns:l="sap.ui.layout"
+	>
+	<m:App>
+		<m:pages>
+			<ObjectPageLayout id="ObjectPageLayout" enableLazyLoading="false">
+				<headerTitle>
+					<ObjectPageHeader objectTitle="学员信息">
+					</ObjectPageHeader>
+				</headerTitle>
+				<headerContent>
+					<!--<m:ObjectAttribute title="" text="This example explains the rules for the rendering of sections"/>-->
+				</headerContent>
+				<sections>
+					<ObjectPageSection title="大班优秀学员">
+						<subSections>
+							<ObjectPageSubSection title="李飞 ">
+								<blocks>
+									<m:Image
+										class="sapUiSmallMarginEnd"
+										src="image/a1.png"
+										densityAware="true"
+										width="100%"
+										height="100%">
+									</m:Image>
+									<m:Text text="优秀学员" width="100%" ></m:Text>
+
+								</blocks>
+							</ObjectPageSubSection>
+							<ObjectPageSubSection title="张强 ">
+								<blocks>
+									<m:Image
+										src="image/a2.png"
+										densityAware="true"
+										width="100%"
+										height="100%">
+									</m:Image>
+									<m:Text text="美好心情" width="100%"></m:Text>
+								</blocks>
+							</ObjectPageSubSection>
+							<ObjectPageSubSection title="范冰冰">
+								<blocks>
+									<m:Image
+										src="image/a5.png"
+										densityAware="true"
+										width="100%"
+										height="100%">
+									</m:Image>
+									<m:Text text="女神级别" width="100%"></m:Text>
+								</blocks>
+							</ObjectPageSubSection>
+						</subSections>
+					</ObjectPageSection>
+					<ObjectPageSection title="中班优秀学员">
+						<subSections>
+							<ObjectPageSubSection title="王二">
+								<blocks>
+									<m:Image
+										src="image/a3.png"
+										densityAware="false"
+										width="100%"
+										height="100%">
+									</m:Image>
+									<m:Text text="2016/3/31" width="100%"></m:Text>
+								</blocks>
+							</ObjectPageSubSection>
+							<ObjectPageSubSection title="张静">
+								<blocks>
+									<m:Image
+										src="image/a4.png"
+										densityAware="false"
+										width="100%"
+										height="100%" >
+									</m:Image>
+									<m:Text text="浙江的范德萨发生大幅度" width="100%"></m:Text>
+								</blocks>
+							</ObjectPageSubSection>
+							<ObjectPageSubSection title="刘莎">
+								<blocks>
+									<m:Image
+										src="image/a6.png"
+										densityAware="false"
+										width="100%"
+										height="100%" >
+									</m:Image>
+									<m:Text text="good good study,day day up" width="100%"></m:Text>
+								</blocks>
+							</ObjectPageSubSection>
+						</subSections>
+					</ObjectPageSection>
+					<ObjectPageSection title="小班优秀学员">
+						<subSections>
+							<ObjectPageSubSection title="小徐">
+								<blocks>
+									<m:Image
+										src="image/a8.png"
+										densityAware="false"
+										width="100%"
+										height="100%" >
+									</m:Image>
+									<m:Text text="好好学习"></m:Text>
+								</blocks>
+							</ObjectPageSubSection>
+							<ObjectPageSubSection title="润苗">
+								<blocks>
+									<m:Image
+										src="image/a7.png"
+										densityAware="false"
+										width="100%"
+										height="100%" >
+									</m:Image>
+									<m:Text text="浙江的范德萨发生大幅度" width="100%"></m:Text>
+									<!--<blockcolor:BlockBlueT2 id="bbt2"/>-->
+								</blocks>
+							</ObjectPageSubSection>
+						</subSections>
+					</ObjectPageSection>
+				</sections>
+			</ObjectPageLayout>
+		</m:pages>
+	</m:App>
+</mvc:View>
