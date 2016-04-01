@@ -26,8 +26,9 @@
 										width="100%"
 										height="100%">
 									</m:Image>
-									<m:Text text="优秀学员" width="100%" ></m:Text>
-
+									<!--<m:Text text="优秀学员" width="100%" ></m:Text>-->
+									<m:FeedListItem showIcon="false" text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiamnonumyeirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum." 
+				    					iconDensityAware="false" maxCharacters="200"/>
 								</blocks>
 							</ObjectPageSubSection>
 							<ObjectPageSubSection title="张强 ">
@@ -39,6 +40,8 @@
 										height="100%">
 									</m:Image>
 									<m:Text text="美好心情" width="100%"></m:Text>
+									<m:FeedListItem showIcon="false" text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore" 
+				    					iconDensityAware="false" maxCharacters="200"/>
 								</blocks>
 							</ObjectPageSubSection>
 							<ObjectPageSubSection title="范冰冰">
@@ -49,7 +52,8 @@
 										width="100%"
 										height="100%">
 									</m:Image>
-									<m:Text text="女神级别" width="100%"></m:Text>
+									<m:FeedListItem showIcon="false" text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat" 
+				    					iconDensityAware="false" maxCharacters="200"/>
 								</blocks>
 							</ObjectPageSubSection>
 						</subSections>
