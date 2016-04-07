@@ -1,0 +1,117 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:u="sap.ui.unified" xmlns:l="sap.ui.layout" controllerName="com.ui.image.view.ImageUpload">
+	<App>
+		<pages>
+			<Page title="图片信息上传">
+				<content>
+					<!--<l:VerticalLayout>-->
+					<!--	 <l:HorizontalLayout class="HorizontalLayoutCSS">-->
+					<!--	      <Label text="标题:"></Label>-->
+					<!--	      <Input value="" width="100%" id="BiaoTi"></Input>-->
+					<!--      </l:HorizontalLayout>-->
+					<!--	  <l:HorizontalLayout>-->
+					<!--	      <Label text="子标题:"></Label>-->
+					<!--	      <Input value="" width="100%" id="ZiBiaoTi"></Input>-->
+					<!--      </l:HorizontalLayout>-->
+					<!--      <l:HorizontalLayout id="HorizontalLayout">-->
+					<!--	      <Label text="描 述:"></Label>-->
+					<!--	      <TextArea value="" rows="3" width="100%" id="MiaoShu" />-->
+					<!--      </l:HorizontalLayout>-->
+					    <!--<u:FileUploader-->
+					    <!--  id="fileUploader"-->
+					    <!--  name="myFileUpload"-->
+					    <!--  uploadUrl="upload/"-->
+					    <!--  width="300px"-->
+					    <!--  multiple="true"-->
+					    <!--  uploadComplete="handleUploadComplete"-->
+					    <!--  typeMissmatch="handleTypeMissmatch"-->
+					    <!--  change="handleValueChange"-->
+					    <!--  style="Emphasized"-->
+					    <!--  fileType="png,jpg"-->
+					    <!--  sendXHR="true"-->
+					    <!--  placeholder="请选择图片进行上传...">-->
+					    <!--    <u:parameters>-->
+					    <!--    <u:FileUploaderParameter-->
+					    <!--        name="dd"-->
+					    <!--        value=""/>-->
+					    <!--      <u:FileUploaderParameter-->
+					    <!--    	id="FileGroup"-->
+					    <!--        name="group"-->
+					    <!--        value=""/>-->
+					    <!--      	<u:FileUploaderParameter-->
+					    <!--    	id="FileUser"-->
+					    <!--        name="user"-->
+					    <!--        value=""/>-->
+					    <!--      	<u:FileUploaderParameter-->
+					    <!--    	id="FileText"-->
+					    <!--        name="text"-->
+					    <!--        value=""/>-->
+					    <!--    </u:parameters>-->
+					    <!--    <u:headerParameters>-->
+					    <!--      <u:FileUploaderParameter-->
+					    <!--        name="text"-->
+					    <!--        value="Foo"/>-->
+					    <!--      <u:FileUploaderParameter-->
+					    <!--        name="headerParam2"-->
+					    <!--        value="bar"/>-->
+					    <!--    </u:headerParameters>-->
+					    <!--  </u:FileUploader>-->
+					  <!--  <Button-->
+					  <!--    text="提交"-->
+					  <!--    press="handleUploadPress"/>-->
+					  <!--</l:VerticalLayout>-->
+				<l:Grid hSpacing="1" vSpacing="1" defaultSpan="XL6 L9 M9 S12">
+				    <l:content>
+				        <Label text="标题">
+				        	<layoutData>
+					          <l:GridData span="L3 M3 S12"/>
+					         </layoutData>
+				        </Label>	
+				        <Input id="BiaoTi">
+				        	<layoutData>
+					          <l:GridData span="L9 M9 S12"/>
+					         </layoutData>
+				        </Input>
+				        <Label text="子标题">
+				        	<layoutData>
+					          <l:GridData span="L3 M3 S12"/>
+					         </layoutData>
+				        </Label>	
+				        <Input id="ZiBiaoTi">
+				        	<layoutData>
+					          <l:GridData span="L9 M9 S12"/>
+					         </layoutData>
+				        </Input>
+				        <Label text="描述">
+				        	<layoutData>
+					          <l:GridData span="L3 M3 S12"/>
+					         </layoutData>
+				        </Label>
+				        <TextArea value="" rows="3" width="100%" id="MiaoShu">
+				        	<layoutData>
+					          <l:GridData span="L9 M9 S12"/>
+					         </layoutData>
+				        </TextArea>
+				        <Label text="图片Url">
+				        	<layoutData>
+					          <l:GridData span="L3 M3 S12"/>
+					         </layoutData>
+				        </Label>
+						<u:FileUploader id="fileUploader" name="myFileUpload" uploadUrl="upload/" width="100%" multiple="true" uploadComplete="handleUploadComplete" typeMissmatch="handleTypeMissmatch" change="handleValueChange" style="Emphasized" fileType="png,jpg" sendXHR="true" placeholder="请选择图片进行上传...">
+							<!--<u:headerParameters>-->
+					  <!--        <u:FileUploaderParameter-->
+					  <!--          name="Content-Type"-->
+					  <!--          value="application/x-www-form-urlencoded"/>-->
+					  <!--      </u:headerParameters>-->
+					      </u:FileUploader>
+					     <Button text="提交" width="100%" press="handleUploadPress">
+					     	<layoutData>
+					          <l:GridData span="L4 M4 S12" indent="L4 M4"/>
+					         </layoutData>
+					     </Button>
+				        </l:content>
+				</l:Grid>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

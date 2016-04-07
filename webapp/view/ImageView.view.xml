@@ -1,4 +1,4 @@
-<mvc:View controllerName="com.ui.image.controller.ImageView" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+<mvc:View controllerName="com.ui.image.view.ImageView" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
 	xmlns:m="sap.m"
 	xmlns="sap.uxap"
 	xmlns:layout="sap.ui.layout"
@@ -6,7 +6,7 @@
 	>
 	<m:App>
 		<m:pages>
-			<ObjectPageLayout id="ObjectPageLayout" enableLazyLoading="false">
+			<ObjectPageLayout id="ObjectPageLayout" enableLazyLoading="false" sections="{/json}">
 				<headerTitle>
 					<ObjectPageHeader objectTitle="学员信息">
 					</ObjectPageHeader>
@@ -14,115 +14,104 @@
 				<headerContent>
 					<!--<m:ObjectAttribute title="" text="This example explains the rules for the rendering of sections"/>-->
 				</headerContent>
-				<sections>
-					<ObjectPageSection title="大班优秀学员">
-						<subSections>
-							<ObjectPageSubSection title="李飞 ">
+				<!--<sections>-->
+					<ObjectPageSection title="{group}" subSections="{files}">
+						<ObjectPageSubSection title="{user}">
 								<blocks>
 									<m:Image
 										class="sapUiSmallMarginEnd"
-										src="image/a1.png"
+										src="{url}"
 										densityAware="true"
 										width="100%"
 										height="100%">
 									</m:Image>
 									<!--<m:Text text="优秀学员" width="100%" ></m:Text>-->
-									<m:FeedListItem showIcon="false" text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiamnonumyeirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum." 
+								</blocks>
+								<m:FeedListItem showIcon="false" text="{text}" 
 				    					iconDensityAware="false" maxCharacters="200"/>
-								</blocks>
 							</ObjectPageSubSection>
-							<ObjectPageSubSection title="张强 ">
-								<blocks>
-									<m:Image
-										src="image/a2.png"
-										densityAware="true"
-										width="100%"
-										height="100%">
-									</m:Image>
-									<m:Text text="美好心情" width="100%"></m:Text>
-									<m:FeedListItem showIcon="false" text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore" 
-				    					iconDensityAware="false" maxCharacters="200"/>
-								</blocks>
-							</ObjectPageSubSection>
-							<ObjectPageSubSection title="范冰冰">
-								<blocks>
-									<m:Image
-										src="image/a5.png"
-										densityAware="true"
-										width="100%"
-										height="100%">
-									</m:Image>
-									<m:FeedListItem showIcon="false" text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat" 
-				    					iconDensityAware="false" maxCharacters="200"/>
-								</blocks>
-							</ObjectPageSubSection>
-						</subSections>
 					</ObjectPageSection>
-					<ObjectPageSection title="中班优秀学员">
-						<subSections>
-							<ObjectPageSubSection title="王二">
-								<blocks>
-									<m:Image
-										src="image/a3.png"
-										densityAware="false"
-										width="100%"
-										height="100%">
-									</m:Image>
-									<m:Text text="2016/3/31" width="100%"></m:Text>
-								</blocks>
-							</ObjectPageSubSection>
-							<ObjectPageSubSection title="张静">
-								<blocks>
-									<m:Image
-										src="image/a4.png"
-										densityAware="false"
-										width="100%"
-										height="100%" >
-									</m:Image>
-									<m:Text text="浙江的范德萨发生大幅度" width="100%"></m:Text>
-								</blocks>
-							</ObjectPageSubSection>
-							<ObjectPageSubSection title="刘莎">
-								<blocks>
-									<m:Image
-										src="image/a6.png"
-										densityAware="false"
-										width="100%"
-										height="100%" >
-									</m:Image>
-									<m:Text text="good good study,day day up" width="100%"></m:Text>
-								</blocks>
-							</ObjectPageSubSection>
-						</subSections>
-					</ObjectPageSection>
-					<ObjectPageSection title="小班优秀学员">
-						<subSections>
-							<ObjectPageSubSection title="小徐">
-								<blocks>
-									<m:Image
-										src="image/a8.png"
-										densityAware="false"
-										width="100%"
-										height="100%" >
-									</m:Image>
-									<m:Text text="好好学习"></m:Text>
-								</blocks>
-							</ObjectPageSubSection>
-							<ObjectPageSubSection title="润苗">
-								<blocks>
-									<m:Image
-										src="image/a7.png"
-										densityAware="false"
-										width="100%"
-										height="100%" >
-									</m:Image>
-									<m:Text text="浙江的范德萨发生大幅度" width="100%"></m:Text>
-									<!--<blockcolor:BlockBlueT2 id="bbt2"/>-->
-								</blocks>
-							</ObjectPageSubSection>
-						</subSections>
-					</ObjectPageSection>
-				</sections>
+					<!--<ObjectPageSection title="中班优秀学员" subSections="{/json}">-->
+					<!--	<ObjectPageSubSection title="{title}">-->
+					<!--			<blocks>-->
+					<!--				<m:Image-->
+					<!--					class="sapUiSmallMarginEnd"-->
+					<!--					src="{url}"-->
+					<!--					densityAware="true"-->
+					<!--					width="100%"-->
+					<!--					height="100%">-->
+					<!--				</m:Image>-->
+					<!--				<m:Text text="优秀学员" width="100%" ></m:Text>-->
+					<!--				<m:FeedListItem showIcon="false" text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiamnonumyeirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum." -->
+				 <!--   					iconDensityAware="false" maxCharacters="200"/>-->
+					<!--			</blocks>-->
+					<!--		</ObjectPageSubSection>-->
+					<!--</ObjectPageSection>-->
+					<!--<ObjectPageSection title="中班优秀学员">-->
+					<!--	<subSections>-->
+					<!--		<ObjectPageSubSection title="王二">-->
+					<!--			<blocks>-->
+					<!--				<m:Image-->
+					<!--					src="image/a3.png"-->
+					<!--					densityAware="false"-->
+					<!--					width="100%"-->
+					<!--					height="100%">-->
+					<!--				</m:Image>-->
+					<!--				<m:Text text="2016/3/31" width="100%"></m:Text>-->
+					<!--			</blocks>-->
+					<!--		</ObjectPageSubSection>-->
+					<!--		<ObjectPageSubSection title="张静">-->
+					<!--			<blocks>-->
+					<!--				<m:Image-->
+					<!--					src="image/a4.png"-->
+					<!--					densityAware="false"-->
+					<!--					width="100%"-->
+					<!--					height="100%" >-->
+					<!--				</m:Image>-->
+					<!--				<m:Text text="浙江的范德萨发生大幅度" width="100%"></m:Text>-->
+					<!--			</blocks>-->
+					<!--		</ObjectPageSubSection>-->
+					<!--		<ObjectPageSubSection title="刘莎">-->
+					<!--			<blocks>-->
+					<!--				<m:Image-->
+					<!--					src="image/a6.png"-->
+					<!--					densityAware="false"-->
+					<!--					width="100%"-->
+					<!--					height="100%" >-->
+					<!--				</m:Image>-->
+					<!--				<m:Text text="good good study,day day up" width="100%"></m:Text>-->
+					<!--			</blocks>-->
+					<!--		</ObjectPageSubSection>-->
+					<!--	</subSections>-->
+					<!--</ObjectPageSection>-->
+					<!--<ObjectPageSection title="小班优秀学员">-->
+					<!--	<subSections>-->
+					<!--		<ObjectPageSubSection title="小徐">-->
+					<!--			<blocks>-->
+					<!--				<m:Image-->
+					<!--					src="image/a8.png"-->
+					<!--					densityAware="false"-->
+					<!--					width="100%"-->
+					<!--					height="100%" >-->
+					<!--				</m:Image>-->
+					<!--				<m:Text text="好好学习"></m:Text>-->
+					<!--			</blocks>-->
+					<!--		</ObjectPageSubSection>-->
+					<!--		<ObjectPageSubSection title="润苗">-->
+					<!--			<blocks>-->
+					<!--				<m:Image-->
+					<!--					src="image/a7.png"-->
+					<!--					densityAware="false"-->
+					<!--					width="100%"-->
+					<!--					height="100%" >-->
+					<!--				</m:Image>-->
+					<!--				<m:Text text="浙江的范德萨发生大幅度" width="100%"></m:Text>-->
+					<!--				<blockcolor:BlockBlueT2 id="bbt2"/>-->
+					<!--			</blocks>-->
+					<!--		</ObjectPageSubSection>-->
+					<!--	</subSections>-->
+					<!--</ObjectPageSection>-->
+				<!--</sections>-->
 			</ObjectPageLayout>
 		</m:pages>
 	</m:App>
