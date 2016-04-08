@@ -7,11 +7,14 @@ sap.ui.controller("com.ui.image.view.ImageView", {
 				{
 					user:"zhang3",
 					imageList:[
-						{url:"image/a1.png"},{text:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr"}]
+						{url:"image/a1.png"},
+						{text:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr"}]
 				},{
 					user:"li4",
 					imageList:[
-						{url:"image/a3.png"},{url:"image/a4.png"},{text:"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invi"}]
+						{url:"image/a3.png"},
+						{url:"image/a4.png"},
+						{text:"Lorem ipsum dolor sit, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invi"}]
 				}]};
 		
 		var oModel = new sap.ui.model.json.JSONModel();

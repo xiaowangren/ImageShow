@@ -124,20 +124,22 @@
 					</ObjectPageHeader>
 				</headerTitle>
 				<!--<sections>-->
-					<ObjectPageSection title="{jsonDetail>user}"  subSections="{jsonDetail>imageList}">
-							<ObjectPageSubSection>
-								<blocks>
-									<m:Image
-										class="sapUiSmallMarginEnd"
-										src="{jsonDetail>url}"
-										densityAware="true"
-										width="100%"
-										height="100%">
-									</m:Image>
-								</blocks>
-								<m:Text text="{jsonDetail>text}"></m:Text>
+					<ObjectPageSection title="{jsonDetail>user}">
+						<subSections>
+							<ObjectPageSubSection blocks="{jsonDetail>imageList}">
+								<m:Image
+									class="sapUiSmallMarginEnd"
+									src="{jsonDetail>url}"
+									densityAware="true"
+									width="100%"
+									height="100%">
+								</m:Image>
+								<moreBlocks>
+									<m:Text text="{jsonDetail>text}"></m:Text>
+								</moreBlocks>
+								
 							</ObjectPageSubSection>
-							
+						</subSections>	
 							<!--<ObjectPageSubSection >-->
 							<!--	<blocks>-->
 							<!--		<m:Text text="123"></m:Text>-->
