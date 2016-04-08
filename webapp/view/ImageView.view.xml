@@ -4,33 +4,166 @@
 	xmlns:layout="sap.ui.layout"
 	xmlns:l="sap.ui.layout"
 	>
+	<!--<m:App>-->
+	<!--	<m:pages>-->
+	<!--		<ObjectPageLayout id="ObjectPageLayout" enableLazyLoading="false" sections="{/json}">-->
+	<!--			<headerTitle>-->
+	<!--				<ObjectPageHeader objectTitle="学员信息">-->
+	<!--				</ObjectPageHeader>-->
+	<!--			</headerTitle>-->
+	<!--			<headerContent>-->
+					<!--<m:ObjectAttribute title="" text="This example explains the rules for the rendering of sections"/>-->
+	<!--			</headerContent>-->
+				<!--<sections>-->
+	<!--				<ObjectPageSection title="{group}" subSections="{files}">-->
+	<!--					<ObjectPageSubSection title="{user}">-->
+	<!--							<blocks>-->
+	<!--								<m:Image-->
+	<!--									class="sapUiSmallMarginEnd"-->
+	<!--									src="{url}"-->
+	<!--									densityAware="true"-->
+	<!--									width="100%"-->
+	<!--									height="100%">-->
+	<!--								</m:Image>-->
+									<!--<m:Text text="优秀学员" width="100%" ></m:Text>-->
+	<!--							</blocks>-->
+	<!--							<m:FeedListItem showIcon="false" text="{text}" -->
+	<!--			    					iconDensityAware="false" maxCharacters="200"/>-->
+	<!--						</ObjectPageSubSection>-->
+	<!--				</ObjectPageSection>-->
+					<!--<ObjectPageSection title="中班优秀学员" subSections="{/json}">-->
+					<!--	<ObjectPageSubSection title="{title}">-->
+					<!--			<blocks>-->
+					<!--				<m:Image-->
+					<!--					class="sapUiSmallMarginEnd"-->
+					<!--					src="{url}"-->
+					<!--					densityAware="true"-->
+					<!--					width="100%"-->
+					<!--					height="100%">-->
+					<!--				</m:Image>-->
+					<!--				<m:Text text="优秀学员" width="100%" ></m:Text>-->
+					<!--				<m:FeedListItem showIcon="false" text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiamnonumyeirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum." -->
+				 <!--   					iconDensityAware="false" maxCharacters="200"/>-->
+					<!--			</blocks>-->
+					<!--		</ObjectPageSubSection>-->
+					<!--</ObjectPageSection>-->
+					<!--<ObjectPageSection title="中班优秀学员">-->
+					<!--	<subSections>-->
+					<!--		<ObjectPageSubSection title="王二">-->
+					<!--			<blocks>-->
+					<!--				<m:Image-->
+					<!--					src="image/a3.png"-->
+					<!--					densityAware="false"-->
+					<!--					width="100%"-->
+					<!--					height="100%">-->
+					<!--				</m:Image>-->
+					<!--				<m:Text text="2016/3/31" width="100%"></m:Text>-->
+					<!--			</blocks>-->
+					<!--		</ObjectPageSubSection>-->
+					<!--		<ObjectPageSubSection title="张静">-->
+					<!--			<blocks>-->
+					<!--				<m:Image-->
+					<!--					src="image/a4.png"-->
+					<!--					densityAware="false"-->
+					<!--					width="100%"-->
+					<!--					height="100%" >-->
+					<!--				</m:Image>-->
+					<!--				<m:Text text="浙江的范德萨发生大幅度" width="100%"></m:Text>-->
+					<!--			</blocks>-->
+					<!--		</ObjectPageSubSection>-->
+					<!--		<ObjectPageSubSection title="刘莎">-->
+					<!--			<blocks>-->
+					<!--				<m:Image-->
+					<!--					src="image/a6.png"-->
+					<!--					densityAware="false"-->
+					<!--					width="100%"-->
+					<!--					height="100%" >-->
+					<!--				</m:Image>-->
+					<!--				<m:Text text="good good study,day day up" width="100%"></m:Text>-->
+					<!--			</blocks>-->
+					<!--		</ObjectPageSubSection>-->
+					<!--	</subSections>-->
+					<!--</ObjectPageSection>-->
+					<!--<ObjectPageSection title="小班优秀学员">-->
+					<!--	<subSections>-->
+					<!--		<ObjectPageSubSection title="小徐">-->
+					<!--			<blocks>-->
+					<!--				<m:Image-->
+					<!--					src="image/a8.png"-->
+					<!--					densityAware="false"-->
+					<!--					width="100%"-->
+					<!--					height="100%" >-->
+					<!--				</m:Image>-->
+					<!--				<m:Text text="好好学习"></m:Text>-->
+					<!--			</blocks>-->
+					<!--		</ObjectPageSubSection>-->
+					<!--		<ObjectPageSubSection title="润苗">-->
+					<!--			<blocks>-->
+					<!--				<m:Image-->
+					<!--					src="image/a7.png"-->
+					<!--					densityAware="false"-->
+					<!--					width="100%"-->
+					<!--					height="100%" >-->
+					<!--				</m:Image>-->
+					<!--				<m:Text text="浙江的范德萨发生大幅度" width="100%"></m:Text>-->
+					<!--				<blockcolor:BlockBlueT2 id="bbt2"/>-->
+					<!--			</blocks>-->
+					<!--		</ObjectPageSubSection>-->
+					<!--	</subSections>-->
+					<!--</ObjectPageSection>-->
+				<!--</sections>-->
+	<!--		</ObjectPageLayout>-->
+	<!--	</m:pages>-->
+	<!--</m:App>-->
+	
 	<m:App>
 		<m:pages>
-			<ObjectPageLayout id="ObjectPageLayout" enableLazyLoading="false" sections="{/json}">
+			<ObjectPageLayout id="ObjectPageLayout" enableLazyLoading="false" sections="{jsonDetail>/files}">
 				<headerTitle>
-					<ObjectPageHeader objectTitle="学员信息">
+					<ObjectPageHeader objectTitle="{jsonDetail>/group}">
 					</ObjectPageHeader>
 				</headerTitle>
-				<headerContent>
-					<!--<m:ObjectAttribute title="" text="This example explains the rules for the rendering of sections"/>-->
-				</headerContent>
 				<!--<sections>-->
-					<ObjectPageSection title="{group}" subSections="{files}">
-						<ObjectPageSubSection title="{user}">
+					<ObjectPageSection title="{jsonDetail>user}"  subSections="{jsonDetail>imageList}">
+							<ObjectPageSubSection>
 								<blocks>
 									<m:Image
 										class="sapUiSmallMarginEnd"
-										src="{url}"
+										src="{jsonDetail>url}"
 										densityAware="true"
 										width="100%"
 										height="100%">
 									</m:Image>
-									<!--<m:Text text="优秀学员" width="100%" ></m:Text>-->
 								</blocks>
-								<m:FeedListItem showIcon="false" text="{text}" 
+								<m:Text text="{jsonDetail>text}"></m:Text>
+							</ObjectPageSubSection>
+							
+							<!--<ObjectPageSubSection >-->
+							<!--	<blocks>-->
+							<!--		<m:Text text="123"></m:Text>-->
+							<!--	</blocks>-->
+							<!--</ObjectPageSubSection>-->
+						<!-- subSections="{jsonDetail>files/imageList}"-->
+						<!--<ObjectPageSubSection title="">-->
+						<!--		<blocks>-->
+						<!--			<m:Image-->
+						<!--				class="sapUiSmallMarginEnd"-->
+						<!--				src="{jsonDetail>/files/imageList/url}"-->
+						<!--				densityAware="true"-->
+						<!--				width="100%"-->
+						<!--				height="100%">-->
+						<!--			</m:Image>-->
+						<!--		</blocks>-->
+						<!--		<m:FeedListItem showIcon="false" text="{jsonDetail>/files/text}" -->
+				  <!--  					iconDensityAware="false" maxCharacters="200"/>-->
+						<!--	</ObjectPageSubSection>-->
+					</ObjectPageSection>
+<!--					<ObjectPageSection>
+							<ObjectPageSubSection>
+									<m:FeedListItem showIcon="false" text="{user}" 
 				    					iconDensityAware="false" maxCharacters="200"/>
 							</ObjectPageSubSection>
-					</ObjectPageSection>
+					</ObjectPageSection>-->
 					<!--<ObjectPageSection title="中班优秀学员" subSections="{/json}">-->
 					<!--	<ObjectPageSubSection title="{title}">-->
 					<!--			<blocks>-->
