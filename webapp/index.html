@@ -20,19 +20,12 @@
 		<script>
 			sap.ui.localResources("view");
 			var app = new sap.m.App({initialPage:"idImageView"});
-			//var page = sap.ui.view({id:"idImageView", viewName:"com.ui.image.view.ImageView", type:sap.ui.core.mvc.ViewType.XML});
-			var page = sap.ui.view({id:"idImageView", viewName:"com.ui.image.view.ImageUpload", type:sap.ui.core.mvc.ViewType.XML});
-
+			var page = sap.ui.view({id:"idImageView", viewName:"com.ui.image.view.ImageView", type:sap.ui.core.mvc.ViewType.XML});
+			//var page = sap.ui.view({id:"idImageView", viewName:"com.ui.image.view.ImageUpload", type:sap.ui.core.mvc.ViewType.XML});
+			// var page = sap.ui.view({id:"idImageView", viewName:"com.ui.image.view.LaunchPad", type:sap.ui.core.mvc.ViewType.XML});
+			// var page = sap.ui.view({id:"idImageapp", viewName:"com.ui.image.view.ImageApp", type:sap.ui.core.mvc.ViewType.JS});
 			app.addPage(page);
 			app.placeAt("content");
-			// sap.ui.getCore().attachInit(function() {
-			// 	new sap.m.Shell({
-			// 		app: new sap.ui.core.ComponentContainer({
-			// 			height : "100%",
-			// 			name : "com.ui.image"
-			// 		})
-			// 	}).placeAt("content");
-			// });
 		</script>
 	</head>
 

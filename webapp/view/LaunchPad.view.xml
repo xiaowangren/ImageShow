@@ -1,0 +1,48 @@
+<mvc:View controllerName="com.ui.image.view.LaunchPad" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:u="sap.ui.unified" 
+>
+	<Page
+    showHeader="false"
+    enableScrolling="false" >
+		
+		<TileContainer
+      id="container"   
+      tileDelete="handleTileDelete"
+      >
+	<tiles>
+      <StandardTile
+        icon="a"
+        number=""
+        numberUnit=""
+        title="文章一"
+        info=""
+        infoState="" 
+        press="handleNavOnSelect">
+      	<customData>
+      		<core:CustomData key="targetPage" value="idImageView"></core:CustomData>
+      	</customData>
+      </StandardTile>
+      </tiles>
+    </TileContainer>
+    <!--<TileContainer-->
+    <!--  id="container"   -->
+    <!--  tileDelete="handleTileDelete"-->
+    <!--  tiles="{/json}">-->
+    <!--  <StandardTile-->
+    <!--    icon="{Icon}"-->
+    <!--    number="{Countmenge}"-->
+    <!--    numberUnit="{Countmeins}"-->
+    <!--    title="{Title}"-->
+    <!--    info="{Info}"-->
+    <!--    infoState="" -->
+    <!--    press="handleNavOnSelect">-->
+    <!--  	<customData>-->
+    <!--  		<core:CustomData key="targetPage" value="{Tpage}"></core:CustomData>-->
+    <!--  	</customData>-->
+    <!--  </StandardTile>-->
+    <!--</TileContainer>-->
+  </Page>
+	
+</mvc:View>
